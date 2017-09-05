@@ -16,7 +16,7 @@ pipeline {
         bat 'mvn clean install'
       }
     }
-  }
+  
   
    stage('deploy') {
       // define step to run
@@ -29,6 +29,7 @@ pipeline {
         //invoke command to start tomcat service      
         bat 'sc start Tomcat7'
       }
-    } 
+    }
+  }	
 }
 
