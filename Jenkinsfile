@@ -3,7 +3,7 @@ pipeline {
   // where pipeline job will run
   agent{
     label "master"
-  }
+  } 
   // start of stages : build, test, deploy ...
   stages {
     // start of stage : build
