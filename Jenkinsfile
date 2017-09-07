@@ -2,7 +2,7 @@
 pipeline {
   // where pipeline job will run
   agent{
-    label "jenkins_master"
+    label "master"
   }
   // start of stages : build, test, deploy ...
   stages {
