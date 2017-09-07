@@ -2,7 +2,6 @@
 pipeline {
   // where pipeline job will run
   agent any
-  
   // start of stages : build, test, deploy ...
   stages {
     // start of stage : build
@@ -12,8 +11,7 @@ pipeline {
         // invoke command to build with maven
         bat 'mvn clean install'
       }
-    }
-  
+    }  
   }	
 }
 
