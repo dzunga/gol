@@ -11,7 +11,7 @@ pipeline {
       // start of running steps inside one stage
       steps {
         // invoke command to build with maven
-        bat 'mvn clean install'
+        sh 'mvn clean install'
       }
     }  
   }	
